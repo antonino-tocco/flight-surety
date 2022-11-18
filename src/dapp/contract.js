@@ -28,7 +28,6 @@ export default class Contract {
             while(this.passengers.length < 5) {
                 this.passengers.push(accts[counter++]);
             }
-
             callback();
         });
     }

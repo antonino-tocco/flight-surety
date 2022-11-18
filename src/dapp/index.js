@@ -8,6 +8,18 @@ import './flightsurety.css';
 
     let result = null;
 
+    let flights = [];
+
+    while (flights.length < 2) {
+        let flight = 'ND1309_' + Date.now();
+        flights.push(flight);
+    }
+
+    for (let flight of flights) {
+        display('Flight', flight, []);
+    }
+
+
     let contract = new Contract('localhost', () => {
 
         // Read transaction
